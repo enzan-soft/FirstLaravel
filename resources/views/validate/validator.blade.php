@@ -38,7 +38,7 @@
         <tr><th>ERROR</th><td>{{$errors->first('age')}}</td></tr>
         @endif
         <tr><th>Age: </th><td><input type="text" name="age" value="{{old('age')}}"></td></tr>
-        <tr><th>Message: </th><td><input type="text" name="message" value="{{old('message')}}"></td></tr>
+        <tr><th>Message: </th><td><input type="text" name="msg" value="{{old('message')}}"></td></tr>
 
         <tr><th></th><td><input type="submit" value="send"></td></tr>
     </form>

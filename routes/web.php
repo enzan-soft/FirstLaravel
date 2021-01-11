@@ -15,7 +15,7 @@ use App\Http\Middleware\ChildMiddleware;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 Route::get('hello', function() {
     return '<html><body><h1>Hello World!</h1></body></html>';
