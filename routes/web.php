@@ -58,3 +58,15 @@ Route::get('validator', 'App\Http\Controllers\ValidateController@validatorindex'
 Route::post('validator', 'App\Http\Controllers\ValidateController@validatorpost');
 Route::get('cookie', 'App\Http\Controllers\CookieController@index');
 Route::post('cookie', 'App\Http\Controllers\CookieController@post');
+Route::get('data', 'App\Http\Controllers\DataController@index');
+Route::get('data/add', 'App\Http\Controllers\DataController@add');
+Route::post('data/add', 'App\Http\Controllers\DataController@create');
+Route::get('data/edit', 'App\Http\Controllers\DataController@edit');
+Route::post('data/edit', 'App\Http\Controllers\DataController@update');
+Route::get('data/del', 'App\Http\Controllers\DataController@del');
+Route::post('data/del', 'App\Http\Controllers\DataController@remove');
+Route::get('person', 'App\Http\Controllers\PersonController@index');
+Route::get('person/find', 'App\Http\Controllers\PersonController@find');
+Route::post('person/find', 'App\Http\Controllers\PersonController@search');
+Route::get('person/add', 'App\Http\Controllers\PersonController@add');
+Route::post('person/add', 'App\Http\Controllers\PersonController@create');
